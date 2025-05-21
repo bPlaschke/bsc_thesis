@@ -1,0 +1,43 @@
+Smart office labels
+Iot devices increased use. 
+for example Replacing paper labels.
+Possible to change wihtout physical interaction, or hook up to otheer logic.
+
+Challenges:
+Power effieiency/Battery runtime
+Size; should fit into holders previously sized for paper labels
+many devices
+price; cost shouldtn
+connection issiues; walls, connection to ap
+
+Solutions:
+pawrPeriodic Advertising with Responses: fairly new low power, needs ap. range limited
+possibly lora -> long range, better for walls, big antenna, more power, already existing infra, data rate limit
+mostly static images -> e-paper displays -> low power
+
+In this thesis:
+Prototype: door label
+low cost, open protocols
+
+Benchmarking two protocols: pawr ble
+power, distance
+comparing
+troughput, usability
+
+In modern office environments, the need for flexibility, remote management, and sustainability has sparked growing interest in smart technologies. Among these, the replacement of traditional paper-based labels with electronic alternatives presents a promising opportunity. Smart office labels—small, digital display devices capable of receiving and showing updated information—offer a dynamic and efficient solution to static signage. These devices can be updated remotely and integrated with broader systems, such as meeting room booking tools, personnel directories, or visitor management platforms. Unlike conventional labels, they require no manual replacement or printing, enabling real-time updates and reducing paper waste.
+
+As the use of Internet of Things (IoT) devices continues to expand, their integration into even the simplest office objects, like door labels or desk signs, becomes increasingly feasible. A core advantage of smart labels is the possibility of changing displayed information without physical interaction. This opens the door to automation and integration with existing infrastructure, such as building management systems or corporate calendars.
+
+However, several challenges must be addressed to make smart labels viable for widespread deployment. Power efficiency is a primary concern. Since these devices are often battery-powered and expected to function for months or even years without maintenance, minimizing energy consumption is critical. Furthermore, physical constraints pose another hurdle: smart labels must fit into holders originally designed for standard paper labels, placing strict limitations on device size and battery capacity.
+
+Scalability is another major consideration. An office may require hundreds or even thousands of these labels, necessitating cost-effective designs and robust communication protocols that can handle a large number of devices simultaneously. Connectivity issues also arise, especially in office environments with thick walls, complex layouts, and limited wireless infrastructure. Maintaining a stable connection to each device—whether for updates or diagnostics—requires careful selection of wireless technologies.
+
+In addressing these challenges, several potential solutions have emerged. One recent innovation is Periodic Advertising with Responses (PAwR), a Bluetooth Low Energy (BLE) feature designed to improve scalability and efficiency in large networks. PAwR enables low-power, broadcast-style communication between access points and many peripheral devices. However, it is relatively new, has limited range, and depends on BLE-compatible infrastructure.
+
+Alternatively, LoRa (Long Range) communication presents a compelling option, especially in scenarios where longer-range communication and better penetration through walls is required. While LoRa's data rate is significantly lower than BLE, it offers superior range and energy efficiency. Additionally, many buildings may already have existing LoRa infrastructure, making integration more straightforward.
+
+Given the nature of smart office labels—primarily displaying mostly static information such as names, room statuses, or schedules—e-paper displays are an ideal choice. These screens consume power only when updating content, making them extremely efficient for long-term deployments where the display content changes infrequently.
+
+This thesis explores the feasibility of implementing a low-cost, scalable smart label system using open protocols and off-the-shelf components. As a proof of concept, a prototype door label will be developed, focusing on minimal energy consumption, interoperability, and ease of deployment.
+
+A key part of this research involves benchmarking two wireless communication protocols—PAwR (BLE) and LoRa—under comparable conditions. Their performance will be evaluated based on factors such as power consumption, communication range, throughput, and practical usability in an office-like setting. By comparing these protocols, the thesis aims to identify which approach offers the most practical and scalable solution for smart office labels.

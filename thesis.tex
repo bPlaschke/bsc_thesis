@@ -1,0 +1,47 @@
+%\documentclass[11pt, draft, oneside]{report}
+\documentclass[11pt]{report}
+%\makeindex
+%\usepackage{german,a4,showidx} %index an seite
+\usepackage{german,a4}
+
+
+%\usepackage[pdftex]{graphicx} \DeclareGraphicsExtensions{.png}  \graphicspath{{bilder/png/}}
+% f\"{u}r normales LaTeX->dvi, Bilder als .eps speichern:
+\usepackage{graphicx} \DeclareGraphicsExtensions{.eps} \graphicspath{{bilder/eps/}}
+
+\usepackage{acronym}
+
+
+%Page sizes
+\setlength{\textwidth}{15 true cm}
+\setlength{\textheight}{22 true cm}
+\oddsidemargin  0.5 cm
+\evensidemargin 0.5 cm
+\topmargin      0 cm
+
+\selectlanguage{english}
+
+\begin{document}
+
+\begin{acronym}
+    \acro{BLE}{Bluetooth Low Energy}
+    \acro{PAwR}{Periodic Advertising with Responses}
+\end{acronym}
+
+%\pagestyle{headings}
+\section*{Introduction}
+
+\begin{itemize}
+    \item Smart office labels
+    \item Iot devices increased use. 
+    \item for example Replacing paper labels.
+    \item Challenges:
+    \subitem Power effieiency/Battery runtime
+    \subitem Size; should fit into holders previously sized for paper labels
+    \subitem many devices
+    \subsubitem price; cost shouldtn
+    \subsubitem connection issiues; walls, connection to ap
+    \item pawrPeriodic Advertising with Responses
+\end{itemize}
+
+\end{document}

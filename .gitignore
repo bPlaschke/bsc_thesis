@@ -4,4 +4,4 @@
 #except
 !.gitignore
 !thesis.tex
-!notes/
+!notes/*

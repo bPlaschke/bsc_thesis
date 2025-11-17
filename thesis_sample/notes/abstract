@@ -1,0 +1,15 @@
+Electronic Shelf Labels (ESLs) are steadily replacing traditional paper Labels in common use scenarios. / becoming more popular / more widely used
+
+To ensure long lasting operation, ESLs rely on power efficient wireless communication.
+To archieve usable lifetime durations, ESLs rely on low power wireless protocols.
+In this Theseis two different types of such protocols, namely Bluetooth Low Energy (BLE) and LoRa are examined.
+In this Theseis two different types of such protocols are examined.
+Bluetooth low Energy wt
+
+The usage of smart in office devices has risen considearabyain the last years.
+This is mostly due to the wider availabilty to, cheaper, smaller, and more efficinet hardware.
+A prime example of such a device is the smart Office Label.
+The advantages of digitalising labels are paramount, as they remove the need to physically access the label on every change and provide the possibility for further automation.
+To be viable as a replacement for traditional labels, smart office labels still have to satisfy some requirements, such as ease of use, cost efficiency and long battery runtime.
+To maximise runtime, the device has to minimise power consumtion and therefore relies on low power displays and networking protocols.
+In this thesis two of such protocols, namely LoRa and Bluetooth low energy (BLE) are examined. 

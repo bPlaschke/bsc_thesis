@@ -1,0 +1,38 @@
+\begin{thebibliography}{GPW93}
+
+\bibitem[GPW93]{ginthoer93}
+Robert Ginth{\"o}r, Marco Platzner, and Reinhold Weiss.
+\newblock {Interprocessor Communication in Distributed Transputer Systems}.
+\newblock Technical Report 355, IIG--Report--Series, February 1993.
+
+\bibitem[Kui94]{Kui94}
+Benjamin Kuipers.
+\newblock {\em {Qualitative Reasoning: Modeling and Simulation with Incomplete Knowledge}}.
+\newblock Artificial Intelligence. MIT Press, 1994.
+
+\bibitem[Man97]{pmandl97}
+Christian Mandl.
+\newblock {\em {Real-Time Searching Coprocessor Architectures}}.
+\newblock PhD thesis, Graz University of Technology, 1997.
+
+\bibitem[Sei88]{mseifter88}
+Peter~Ewald Seifter.
+\newblock {Interaktives Grafiksystem zur Erstellung und Simulation hydraulischer Schaltungen}.
+\newblock Master's thesis, Institute for Technical Informatics, Graz University of Technology, 1988.
+
+\bibitem[Voa97]{Voas97}
+Jeffrey Voas.
+\newblock A defensive approach to certifying cots software.
+\newblock {\em RSTR-002-97-002.01, Reliable Software Technologies Corporation}, August 1997.
+
+\bibitem[WB92]{weiss92}
+Reinhold Weiss and Eugen Brenner.
+\newblock {Ein verteiltes Echtzeit--Expertensystem auf Transputerbasis}.
+\newblock In {\em Comett Seminar: Industrielle Anwendungen paralleler Computersysteme}, pages 3--9, Graz, Austria, 1992.
+
+\bibitem[Wei92]{weiss92a}
+Reinhold Weiss.
+\newblock {\em {Verteilte Echtzeitsysteme}}.
+\newblock Automatisierungstechnisches Kolloquium der FESTO Akademie, Stuttgart, Germany, March 1992.
+
+\end{thebibliography}

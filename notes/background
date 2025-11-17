@@ -1,0 +1,88 @@
+
+############################ ARCHIVE ############################ 
+bluetooth is a low-range wireless technology. Its primary use is to craete personal are networks, or piconets to commuicate with other devices at close range. The bluetooth wireless, Basic rate (BR)  -> core_6.1:224
+Br/edr was the originial standard, ble was introduced 2010 with the Bluetooth 4.0 spec by the Bluetooth SIG  to support low power/low dutycycle devices.
+
+
+############################# NOTES ############################# 
+The bluetooth core spec / bluetooth sig / interoperable blueooth devices.
+low power
+power consumption
+ble -> 40 channels 37, 3 advertising -> placed to avoid wifi channels
+
+########################## LEGIT TEXT ###########################
+bluetooth is a wireless technology for low power, low range communications. It operates in the 2.4GHz ISM band in a range from 2402.0-2480 MHz.
+The bluetooth technology supports two distinct architectures: BLE and br/edr or bluetooth classic.
+
+Bluetooth classic
+The first Bluetooth standard, which today is often referenced as bluetooth classic, was introduced in 1998.
+It uses a bitrate of 1 Mbit/s and the GFSK modulation scheme. -> 25 years   
+It employs the frequency hopping spread-spectrup (FHSS) method over a pseudo-random ordering of 79 one-Mhz channels -> core 6.1
+
+In 2004 Bluetooth v2.0 was released, which added a 2 Mb/s enhanced data rate (EDR) channel which employs PSK modulation scheme.
+In 2007 with Bluetooth v2.1 the maximal data rate was increased again to 3 Mb/s.
+These channels work on top of the base rate 1Mbps channel, as the header and access code in blueooth packets are sent using the BR GFSK while the rest of the package can be sent using the EDR PSK. ->25 years
+
+Bluetooth LE
+Differences to Bluetooth Classic
+In 2010 Bluetooth v4.0 introduced bluetooth LE as a distincnt network architecture. Thr primary goal of BLE is to enable support low power operation. Therfore many of the differences to Bluetooth classic have the goal to reduce power consumption. Altough, some properties are same as with bluetooth br/edr, such as the frequencyband of 2.402 - 2.480GHz, FHSS schema and GFSK modulation. -> bluetooth page
+BLE divides the frequency band into 40 channels with a spacing of 2Mhz. This reduces the demands on RF filtering. -> 25 yeas
+While bluetooth classic perofrms discovery over 32 channels, BLE has 3 fixed channels, which are dedicated advertising channels. This increases discovery efficiency, and therefore also power efficiency. -> 25 years
+In BLE connections, the connection interval, as well as the transmit and receive latencies are modifiable. ->ti
+This provides BLE with an energy-efficient way of mainaining connections.
+Because BLE has lower requirements, single-mode BLE ICs are a lower power, simpler, and at lower cost, than ICs supporting Blueooth br/edr. -> ti
+
+BLE physical layer
+Ble operates in the unlicenced 2.4 GHz ISM band. It employs FHSS schema over 40 pysical channel, which are separeated by 2MHz.
+Three channels are fixed as dedicated advertising channels. The frequency of these advertising channels are chosen in a way, that they avoid peak Wifi channels. This is to reduce the probability of interfirence, due to the wifi high signal power and broad deployment. (citation needed) 
+It uses GFSK and supports a datarate of 1Msym/s and 2Msym/s. 
+
+BLE devices can asume two types of roles, central and peripheral.
+BLE defines four types of roles of which a device can assume multiple.
+
+Broadcaster: A device operating in Broadcaster mode sends advertisment packets.
+Observer: A device operating in Observer mode scans for advertisment packets.
+Central: A device operating in Central mode establishes connections to devices in periphal mode.
+Peripheral: A device operating in Peripheral mode accepts incoming connections from devices operating in Central mode.
+
+BLE Logical transports
+
+BLE supports vaious Logical transport types.
+The LE asynchronous connection (LE ACL) provides a simple way to create a connection between a peripheral and central device.  -> core
+The connection is bidirectional and employs a simple reliabiltiy mechanism by using an 1-bit NESN/SN scheme.
+It is initiated by the cetnral, which also sets the connection parameters.
+The LE ACL has a connection establishement overhead, but after a connection is created and configured, the transport provides a fairly reliableway of transmitting larger amounts of data.
+
+LE advertising broadcast (ADVB)
+The BLE advertising broadcast is a unidirected logical transport.
+It is used to transmit control and user data to scanning devices in receiving range.
+When scanning the advertisment packet, a device can send a request immediately after to receive additional userdata.
+The ADVB has no initiatiation overhead, because no connection is created.
+Because there is no acknowlegement from the receiver, the transmission is unreliable.
+To compensate for this, messages are repeated multiple times. 
+This makes sending larger payloads very inefficient and unreliable.
+    
+LE periodic advertising broadcast (PADVB)
+The PADVB functions similar to the ADVB in that it is an unidirected broadcast without acknowlegement.
+The differentiating feature is that the interval in which advertisment packets are sent is fixed.
+Additionaly the advertising device broadcasts control information about the periodic advertising.
+This makes it possible for scanning devices to sync to the periodic advertisment.
+This reduces the radio-on time dramatically, because the scanner can anticipate adv packets and turn the radio on only during the broadcast window.
+PADVB enables one to many communication at extremly low power.
+The main restriction is that the communication is only unidirectional, which limits the applicaiton possiblities.
+
+Periodic advertising with responses (PAwR)
+PAwR combines various features from other logical transports, to enable low power bidirectional one-to-many networks.
+PaWR utilizes periodic broadcasts to communicate to peripheral nodes.
+Different from PADVB it divides it periodic broadcasts into several subevents.
+Peripherals subscribe and wake only at the selected subevent.
+To enable bidirectionality, every subevent provides up to 255 dedicated response slots, which follow the subevent broadcast.
+These response slots allow the peripherals addressed by the advertising device to send back responses.
+Such a series of periodic events is called the PAwR train.
+
+Due to the short communication windows, PAwR has a really low troughput.
+If higher volume data has to be transmitted, PAwR provides the possiblity to create a connection to a synchronized device.
+To innitate the conneciton, the advertiser sends a AUX_CONNECT_REQ packet in the subevent broadcast and specifies the peripheral it want to establish the connection with. The peripheral response with an AUX_CONNECT_RSP and right after receiving AUX_CONNECT_REQ. The connection is created directly after that. 
+
+A PAwR advertiser can support up to 128 subevent, which each can provide up to 255 synchronized peripherals.
+This results in a total maximum of 32640 synchronized to a PaWR train.

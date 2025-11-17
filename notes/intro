@@ -1,0 +1,15 @@
+The increased capabilities of IoT devices have enabled the replacement of traditional systems with smart, electronic, and networked alternatives.
+This is the case for smart door labels, which promise to replace classical door labels.
+These smart labels offer several advantages, such as remote modification of displayed content, elimination of paper waste and numerous posiblities for automation and integration into broader systems, such as room booking tools and personal calendars.
+
+For smart door labels to be considered a viable drop-in replacement for traditional labels, several challenges must be addressed.
+Due to their typically mains-independent operation, power efficiency is of primary concern. Ideally, door labels should have a runtime of several years
+to minimize maintenance costs associated with individually charging each device, especially considering the substantial number of devices commonly deployed in office environments. 
+
+Smart labels typically connect to a central access point (AP), which allows the control through a user-friendly interface, such as a website or an app.
+If many devices are connected to the same AP, network topology can lead to network congestion issues. In addition, range and reachability must be considered. These can differ greatly depending on the position of the devices and the building materials.
+
+To address this challanges, the bluetooth 5.3 standard has indtroduced the BLE periodic Advertising with responses (PAwR) protocol. This enables a low-power, syncronized one-to-many communication. Since no classical BLE connection is required, a single AP can easily manage a large numer of labels.
+Another approach is to use LoraWan, which proviedes two significant advantages: increased range and the availability of existing infrastructure. Smart labels can connect to LoRaWan gateways and use already existing networks with wide coverage, such as The Things Network (TTN). However, this comes with the drawback of low troughput, as these netwoks often impose strict transmission limits.
+
+In this thesis, we compare LoRa and BLE with PAwR in the context of smart office label applications. We evaluate the performance of both protocols with respect to power consumption, usability, and range. For this purpose a protoype a protoype has been developed to serve as a benchmarking platform. 

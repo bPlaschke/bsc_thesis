@@ -1,0 +1,24 @@
+
+Lora indoor Performance
+
+T. Ameloot, P. Van Torre and H. Rogier, "LoRa Indoor Performance: an Office Environment Case Study," 2018 International Applied Computational Electromagnetics Society Symposium - China (ACES), Beijing, China, 2018, pp. 1-2, doi: 10.23919/ACESS.2018.8669294. keywords: {Signal to noise ratio;Receivers;Smart buildings;Wireless communication;Radio transmitters;Antenna measurements},
+
+Lora in Multifloor
+
+W. Xu, J. Y. Kim, W. Huang, S. S. Kanhere, S. K. Jha and W. Hu, "Measurement, Characterization, and Modeling of LoRa Technology in Multifloor Buildings," in IEEE Internet of Things Journal, vol. 7, no. 1, pp. 298-310, Jan. 2020, doi: 10.1109/JIOT.2019.2946900.
+keywords: {Loss measurement;Fading channels;Internet of Things;Indoor environment;Smart buildings;Automobiles;Field study;indoor propagation;long range (LoRa);smart building;temporal fading (TF)},
+
+
+https://ieeexplore.ieee.org/document/1368913 -> what is bluetooth
+https://ieeexplore.ieee.org/document/968817 -> overview of bluetooth ieee
+https://www.mathworks.com/help/bluetooth/gs/comparison-of-bluetooth-bredr-and-bluetooth-le.html -> ble vs classic
+https://www.mdpi.com/1999-5903/11/9/194 -> 25years of bluetooth
+https://www.ti.com/lit/wp/swry007/swry007.pdf -> ti
+
+bluetooth overview
+https://www.bluetooth.com/learn-about-bluetooth/tech-overview/ -> bluetooth overview sig
+
+Bluetooth classic
+https://www.mobilephonemuseum.com/phone-detail/r520m -> first blueotoh device
+
+https://devzone.nordicsemi.com/guides/nrf-connect-sdk-guides/b/software/posts/periodic-advertising-with-responses-pawr-a-practical-guide

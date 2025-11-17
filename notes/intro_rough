@@ -11,7 +11,7 @@ price; cost shouldtn
 connection issiues; walls, connection to ap
 
 Solutions:
-pawrPeriodic Advertising with Responses: fairly new low power, needs ap. range limited
+pawrPeriodic Advertising with Responses: fairly new, one to many low power, needs ap. range limited
 possibly lora -> long range, better for walls, big antenna, more power, already existing infra, data rate limit
 mostly static images -> e-paper displays -> low power
 
